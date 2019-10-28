@@ -13,7 +13,8 @@ public class SessionDemo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
+		System.out.println("修改");
 		response.setContenType("text/html; charset=UTF-8");
 		HttpSession session = request.getSession();
 		
